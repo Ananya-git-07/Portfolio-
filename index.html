@@ -38,9 +38,6 @@
 
         </div>
     </div>
-
-
-
     <!-------------- ABOUT -->
     <div id="about">
         <div class="container">
@@ -65,8 +62,6 @@
                         <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
                         <p class="tab-links" onclick="opentab('Experience', event)">Experience</p>
                         <p class="tab-links" onclick="opentab('Education', event)">Education</p>
-
-
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul class="skills-list">
@@ -250,6 +245,7 @@
                 <p>Date: June 26, 2025</p>
             </div>
 
+            <!--7-->
             <div class="cert-card">
                 <img src="batch.png" alt="MongoDB Certificate" />
                 <h3>Prompt Engineering Guide</h3>
@@ -284,7 +280,6 @@
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" id="black" class="button btn2">Submit</button>
-
                     </form>
                     <span id="msg"></span>
                 </div>
@@ -295,7 +290,6 @@
             const scriptURL = 'https://script.google.com/macros/s/AKfycbzGhicYl_mycz-7FvFdgIkZVcI923k5TcddbFS-RP6q2_UYRGg5Hqig8OvERetU4ln9jg/exec'
             const form = document.forms['submit-to-google-sheet']
             const msg = document.getElementById("msg")
-
             form.addEventListener('submit', e => {
                 e.preventDefault()
                 fetch(scriptURL, { method: 'POST', body: new FormData(form) })
@@ -306,8 +300,6 @@
                     })
                     .catch(error => console.error('Error!', error.message))
             })
-
-        </script>
+     </script>
 </body>
-
 </html>
